@@ -1,0 +1,46 @@
+
+  .toolbar {
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+  }
+
+ 
+
+  .button_play_pause, .button_stop {
+    width: var(--button-pause-play-width);
+    padding: 0;
+    cursor: pointer;
+    background-color: rgba(28, 226, 166, 0.897);
+
+  }
+
+  .button_icon_path {
+    fill: var(--color-fg);
+    background-color: rgba(28, 226, 166, 0.897);
+
+  }
+
+  .input_bpm {
+    width: var(--input-bpm-width);
+    background-color: rgba(28, 226, 166, 0.897);
+  }
+
+  .label_bpm {
+    margin-left: calc(var(--spacer) / 2);
+    margin-right: var(--spacer);
+  }
+
+  .select_sequence {
+    margin-left: var(--spacer);
+    text-transform: uppercase;
+  color: rgb(43, 214, 226);    
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 306 306'%3E%3Cpolygon fill='%23f5f5f5' points='270.3,58.6 153,175.9 35.7,58.6 0,94.3 153,247.3 306,94.3'/%3E%3C/svg%3E");
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding: 0 40px 0 10px;
+  }
