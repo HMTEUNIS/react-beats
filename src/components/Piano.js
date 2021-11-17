@@ -67,8 +67,8 @@ const Piano = () => {
         <div className="piano-container">
             <label id="label">Choose an instrument</label>
                 <select onChange={handleChange} id='instruments' name='instruments'>
-                    <option value= "'acoustic_grand_piano'">acoustic grand piano</option>
-                    <option value="'banjo'">banjo</option>
+                    <option value= "acoustic_grand_piano">acoustic grand piano</option>
+                    <option value="banjo">banjo</option>
                 </select>
             <Instrument
                 instrumentName={instrumentName}
