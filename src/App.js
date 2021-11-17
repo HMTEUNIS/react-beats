@@ -9,11 +9,8 @@ import useStyles from './hooks/useStyles'
 import './App.css'
 import Keys from './Keys'
 import Nav from './components/Nav'
-<<<<<<< HEAD
 import Piano from './components/Piano'
-=======
 import Saved from './Saved'
->>>>>>> a65562e0a7cbfe7e85a37564ecb615011ef2fada
 
 function App() {
      

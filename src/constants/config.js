@@ -30,10 +30,8 @@ const sequenceList = [
                 
             }
         ]
-<<<<<<< HEAD
 
 
-=======
     
         
     },
@@ -67,7 +65,6 @@ const sequenceList = [
                 
             }
         ]
->>>>>>> a65562e0a7cbfe7e85a37564ecb615011ef2fada
     }
 ]
 
