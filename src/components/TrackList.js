@@ -4,11 +4,13 @@ import { soundFiles } from '../constants/config'
 import Track from './Track'
 import { context } from 'tone'
 
-const TrackList = ({ currentStepID }) => {
+const TrackList = ({ currentStepID, selected, fetched }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
 
+
+    console.log('selected', selected)
     const toSave = trackList.map( track => {
-        console.log(track)
+        
         const soundSave = {
             name : track.soundFile,
             notes: track.onNotes
@@ -16,16 +18,30 @@ const TrackList = ({ currentStepID }) => {
     return    soundSave
     })
     function saveIt (e) {
-            const track0 = toSave[0].title
+          
              
 
-        let newBeat = {
-           [toSave[0].name]: toSave[0].notes,
-           [toSave[1].name]: toSave[1].notes,
-           [toSave[2].name]: toSave[2].notes,
-           [toSave[3].name]: toSave[3].notes
+        let newBeat ={ 
+        trackListInfo : [
+            {
+                "name": toSave[0].name,
+                "notes": toSave[0].notes
+            },
+            {
+                "name": toSave[1].name,
+                "notes": toSave[1].notes
+            },
+            {
+                "name": toSave[2].name,
+                "notes": toSave[3].notes
+            },
+            {
+                "name": toSave[3].name,
+                "notes": toSave[3].notes
+            }
+           
+        ]  }
 
-        }
         fetch('http://localhost:4000/beats', {
             method: 'POST', 
             headers: {
@@ -40,22 +56,19 @@ const TrackList = ({ currentStepID }) => {
           .catch((error) => {
             console.error('Error:', error);
           });
-          
-         
-
-        //post  
-
-        
-        console.log('newBeat', newBeat)
-       
     }
-
+// use an if statement to say that if selected > 0 onNotes is the array in the id'd array
+       const gettin = fetched[selected-1]
     const content = trackList.map((track, trackID) => {
-        const { title, onNotes, soundFile } = track
+        let { title, onNotes, soundFile } = track
         const soundFilePath = soundFiles[soundFile]
-
-
+            console.log(fetched)
         
+        console.log("find", gettin.trackListInfo)
+           
+        //
+
+            
     
        
         return (
