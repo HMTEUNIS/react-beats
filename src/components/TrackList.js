@@ -4,7 +4,7 @@ import { soundFiles } from '../constants/config'
 import Track from './Track'
 import { context } from 'tone'
 
-const TrackList = ({ currentStepID, selected, fetched }) => {
+const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
   
 
@@ -12,7 +12,7 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
 
     console.log('selected', selected)
     let toSave = trackList.map( track => {
-        // console.log('savedtl', trackList)
+       
         const soundSave = {
             name : track.soundFile,
             notes: track.onNotes
@@ -51,13 +51,12 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
             body: JSON.stringify(newBeat),
           })
           .then(res => res.json())
-          .then(data => {
-            console.log(data);
-          })
+          .then(data => setre(!re) )
           .catch((error) => {
             console.error('Error:', error);
           });
     }
+    console.log('reload', re)
 const gettin = fetched[selected]
 
 let loadedNotes = gettin.trackListInfo

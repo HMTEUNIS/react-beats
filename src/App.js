@@ -87,12 +87,14 @@ const [fetched, setFetched] = useState ([{
        
     ], id: 1  }]
 )
+//triggers a reload
+const [re, setre] = useState (false)
     useEffect(() => {
     fetch ('http://localhost:4000/beats')
   
     .then(response => response.json())
     .then(data => setFetched(data));
-    }, [])
+    }, [re])
     
 
     //sending saved beats
@@ -113,7 +115,7 @@ const [fetched, setFetched] = useState ([{
                 <Steps count={totalSteps} />
                 <div className="app_content">
                     <PlayHead {...playHeadProps} />
-                    <TrackList {...trackListProps} selected={selected} fetched={fetched} />
+                    <TrackList {...trackListProps} selected={selected} fetched={fetched} re={re} setre={setre} />
                     <Saved setSelected={setSelected} fetched={fetched} />
                     
                 </div>
