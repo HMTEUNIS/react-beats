@@ -10,7 +10,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
 
     const [notes, setNotes] = useState ([])
 
-    console.log('selected', selected)
     let toSave = trackList.map( track => {
        
         const soundSave = {
@@ -56,7 +55,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             console.error('Error:', error);
           });
     }
-    console.log('reload', re)
+    
 const gettin = fetched[selected]
 
 let loadedNotes = gettin.trackListInfo
