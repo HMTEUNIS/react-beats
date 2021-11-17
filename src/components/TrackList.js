@@ -60,27 +60,33 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
           });
     }
 // use an if statement to say that if selected > 0 onNotes is the array in the id'd array
-       const gettin = fetched[selected-1]
-      
+const gettin = fetched[selected]
+
+let loadedNotes = gettin.trackListInfo
+let loadKicks = gettin.trackListInfo[0].notes
+let loadSnares = gettin.trackListInfo[1].notes
+let loadHho = gettin.trackListInfo[2].notes
+let loadHhc = gettin.trackListInfo[3].notes
+
+
+       console.log('tracklist', trackList[0].onNotes)
+       trackList[0].onNotes = loadKicks
+       trackList[1].onNotes = loadSnares
+       trackList[2].onNotes = loadHho
+       trackList[3].onNotes = loadHhc
+
     let content = trackList.map((track, trackID) => {
         let key = trackID
         let { title, onNotes, soundFile, id } = track
 
         let soundFilePath = soundFiles[soundFile]
-      let runningNotes = track.onNotes
-      let loadedNotes = gettin.trackListInfo
-      let loadKicks = gettin.trackListInfo[0].notes
-      let loadSnares = gettin.trackListInfo[1].notes
-      let loadHho = gettin.trackListInfo[2].notes
-      let loadHhc = gettin.trackListInfo[3].notes
+      
       console.log("loadedKicks", loadKicks)
-      console.log("memo", memo )
     console.log('loaded', loadedNotes)
-      console.log('runningNotes', runningNotes)
       console.log('id', trackID)
 
       ///useEffect
-       onNotes = loadKicks
+       
 
         return (
          <> 

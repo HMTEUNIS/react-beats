@@ -95,7 +95,7 @@ const [fetched, setFetched] = useState ([{
     
 
     //sending saved beats
-    const [selected, setSelected] = useState (1)
+    const [selected, setSelected] = useState (0)
     //selected returns the ID of the beat clicked in the bar
    
     

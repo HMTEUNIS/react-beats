@@ -4,27 +4,19 @@
       "trackListInfo": [
         {
           "name": "kick1",
-          "notes": [
-            
-          ]
+          "notes": []
         },
         {
           "name": "snare1",
-          "notes": [
-            
-          ]
+          "notes": []
         },
         {
           "name": "hh_open1",
-          "notes": [
-            
-          ]
+          "notes": []
         },
         {
           "name": "hh_closed1",
-          "notes": [
-            
-          ]
+          "notes": []
         }
       ],
       "id": 1
@@ -174,28 +166,51 @@
     },
     {
       "trackListInfo": [
-        [
-          [
-            8
+        {
+          "name": "kick1",
+          "notes": []
+        },
+        {
+          "name": "snare1",
+          "notes": [
+            11
           ]
-        ],
-        [
-          [
-            10
-          ]
-        ],
-        [
-          [
-            10
-          ]
-        ],
-        [
-          [
-            10
-          ]
-        ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": []
+        },
+        {
+          "name": "hh_closed1",
+          "notes": []
+        }
       ],
       "id": 7
+    },
+    {
+      "trackListInfo": [
+        {
+          "name": "kick1",
+          "notes": [
+            6,
+            11,
+            14
+          ]
+        },
+        {
+          "name": "snare1",
+          "notes": []
+        },
+        {
+          "name": "hh_open1",
+          "notes": []
+        },
+        {
+          "name": "hh_closed1",
+          "notes": []
+        }
+      ],
+      "id": 8
     }
   ]
 }

@@ -41,7 +41,7 @@ const sequenceList = [
             {   
                 title: 'Kick',
                 soundFile: 'kick1',
-                onNotes: [3],
+                onNotes: [],
                 
             },
             {
