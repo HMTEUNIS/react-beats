@@ -55,6 +55,18 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             console.error('Error:', error);
           });
     }
+    function deleteTrack (e) {
+        fetch(`http://localhost:4000/beats/${selected}`, {
+  method: 'DELETE', 
+})
+.then(res => res.json())
+.then(data => {
+    setre(!re);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+    }
     
 const gettin = fetched[selected]
 
@@ -107,9 +119,10 @@ function loadin (e){
         
             {content}
         </div>
-        <button onClick={(e) => saveIt()} > SAVE BEAT </ button>
-        <button onClick={(e) => loadin()} > LOAD BEAT </ button>
-        <p>Beat1 is the reset!</p>
+        <button className="tlButtons" onClick={(e) => saveIt()} > SAVE THIS BEAT </ button>
+        <button className="tlButtons"  onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
+        <button className="tlButtons"  onClick={(e) => deleteTrack()} >DELETE SELECTED BEAT</button>
+        <p>Beat1 is the reset! It is the default on load, we highly suggest not deleting it.</p>
         </>
     )
 }

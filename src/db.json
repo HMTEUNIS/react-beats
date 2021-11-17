@@ -338,34 +338,6 @@
       "trackListInfo": [
         {
           "name": "kick1",
-          "notes": []
-        },
-        {
-          "name": "snare1",
-          "notes": []
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
-            6,
-            3,
-            12,
-            14
-          ]
-        },
-        {
-          "name": "hh_closed1",
-          "notes": [
-            8
-          ]
-        }
-      ],
-      "id": 14
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
           "notes": [
             4,
             7,
@@ -426,37 +398,6 @@
         }
       ],
       "id": 16
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            0,
-            3,
-            6,
-            9,
-            13,
-            14,
-            8
-          ]
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            10
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": []
-        },
-        {
-          "name": "hh_closed1",
-          "notes": []
-        }
-      ],
-      "id": 17
     },
     {
       "trackListInfo": [
