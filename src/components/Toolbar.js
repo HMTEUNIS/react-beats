@@ -50,25 +50,8 @@ const ToolBar = ({
             </button>
             <input className="form_element input_bpm" id="bpm" type="text" value={BPM} onChange={updateBPM} />
             <label className="label_bpm" htmlFor="bpm">BPM</label>
-            <select
-                className="form_element select_sequence"
-                value={selectedSequenceID}
-                onChange={e => selectSequence(+e.target.value)}
-                aria-label="Select sequence"
-            >
-                {
-                    sequenceList.map(seq => {
-                        return (
-                            <option
-                                key={seq.id}
-                                value={seq.id}
-                            >
-                                {seq.title}
-                            </option>
-                        )
-                    })
-                }
-            </select>
+    
+          
 
         </nav>
     )

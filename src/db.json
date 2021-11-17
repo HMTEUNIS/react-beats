@@ -82,7 +82,132 @@
           ]
         }
       ],
-      "id": 3
+      "id": 3,
+          "name": "snare1",
+          "notes": [
+            10
+          ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": [
+            12,
+            14
+          ]
+        },
+        {
+          "name": "hh_closed1",
+          "notes": [
+            13,
+            7,
+            4,
+            1,
+            10,
+            11,
+            15
+          ]
+        }
+      ],
+      "id": 18
+    },
+    {
+      "trackListInfo": [
+        {
+          "name": "kick1",
+          "notes": []
+        },
+        {
+          "name": "snare1",
+          "notes": [
+            7,
+            11
+          ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": [
+            2,
+            12,
+            9,
+            7,
+            15
+          ]
+        },
+        {
+          "name": "hh_closed1",
+          "notes": [
+            9,
+            5,
+            2,
+            0
+          ]
+        }
+      ],
+      "id": 19
+    },
+    {
+      "trackListInfo": [
+        {
+          "name": "kick1",
+          "notes": [
+            14
+          ]
+        },
+        {
+          "name": "snare1",
+          "notes": [
+            7,
+            11
+          ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": [
+            2,
+            12,
+            9,
+            7,
+            15
+          ]
+        },
+        {
+          "name": "hh_closed1",
+          "notes": [
+            9,
+            5,
+            2,
+            0,
+            13
+          ]
+        }
+      ],
+      "id": 20
+    },
+    {
+      "trackListInfo": [
+        {
+          "name": "kick1",
+          "notes": []
+        },
+        {
+          "name": "snare1",
+          "notes": [
+            2,
+            8
+          ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": [
+            3
+          ]
+        },
+        {
+          "name": "hh_closed1",
+          "notes": []
+        }
+      ],
+      "id": 21
     }
   ]
 }
