@@ -48,6 +48,41 @@
         }
       ],
       "id": 2
+    },
+    {
+      "trackListInfo": [
+        {
+          "name": "kick1",
+          "notes": [
+            3,
+            15,
+            8
+          ]
+        },
+        {
+          "name": "snare1",
+          "notes": [
+            5,
+            9
+          ]
+        },
+        {
+          "name": "hh_open1",
+          "notes": [
+            6,
+            2,
+            8
+          ]
+        },
+        {
+          "name": "hh_closed1",
+          "notes": [
+            13,
+            9
+          ]
+        }
+      ],
+      "id": 3
     }
   ]
 }
