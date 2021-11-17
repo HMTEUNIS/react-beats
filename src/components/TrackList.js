@@ -122,7 +122,7 @@ function loadin (e){
         <button className="tlButtons" onClick={(e) => saveIt()} > SAVE THIS BEAT </ button>
         <button className="tlButtons"  onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
         <button className="tlButtons"  onClick={(e) => deleteTrack()} >DELETE SELECTED BEAT</button>
-        <p>Beat1 is the reset! It is the default on load, we highly suggest not deleting it.</p>
+        <p>Beat1 is the reset! It is the default on load and we highly suggest not deleting it.</p>
         </>
     )
 }

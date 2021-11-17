@@ -1,5 +1,5 @@
 html, body, div, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -24,6 +24,9 @@ time, mark, audio, video {
     font-size: large;
     color: rgb(59, 202, 15);
 	padding: 1%;
+	border: 1px;
+	text-shadow: 1px 1px #00ff2a;
+	
 	
 }
 
@@ -34,5 +37,15 @@ body {
 
 code {
 	font-family: 'quartz-regular', sans-serif;  -webkit-font-smoothing: antialiased;
+}
+
+p {
+	font-size: 17px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: rgb(255, 8, 0);
+	text-align: center;
+	vertical-align: baseline;
 }
 
