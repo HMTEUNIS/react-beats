@@ -35,8 +35,8 @@ function App() {
     const lapsedTime = isSequencePlaying ? Math.max(0, playerTime - startTime) : 0
     const totalLapsedTime = pastLapsedTime + lapsedTime
 
-    //save beat
-    const [savedPattern, savePattern] = useState ([])
+    // //save beat
+    // const [savedPattern, savePattern] = useState ([])
 
     useEffect(() => {
         if (isSequencePlaying) {

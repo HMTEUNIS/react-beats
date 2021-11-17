@@ -11,8 +11,8 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
     const [notes, setNotes] = useState ([])
 
     console.log('selected', selected)
-    const toSave = trackList.map( track => {
-        
+    let toSave = trackList.map( track => {
+        // console.log('savedtl', trackList)
         const soundSave = {
             name : track.soundFile,
             notes: track.onNotes
@@ -21,7 +21,6 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
     })
     function saveIt (e) {
           
-             
 
         let newBeat ={ 
         trackListInfo : [
@@ -35,7 +34,7 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
             },
             {
                 "name": toSave[2].name,
-                "notes": toSave[3].notes
+                "notes": toSave[2].notes
             },
             {
                 "name": toSave[3].name,
@@ -59,7 +58,6 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
             console.error('Error:', error);
           });
     }
-// use an if statement to say that if selected > 0 onNotes is the array in the id'd array
 const gettin = fetched[selected]
 
 let loadedNotes = gettin.trackListInfo
@@ -69,25 +67,22 @@ let loadHho = gettin.trackListInfo[2].notes
 let loadHhc = gettin.trackListInfo[3].notes
 
 
-       console.log('tracklist', trackList[0].onNotes)
-       trackList[0].onNotes = loadKicks
-       trackList[1].onNotes = loadSnares
-       trackList[2].onNotes = loadHho
-       trackList[3].onNotes = loadHhc
+function loadin (e){
+    trackList[0].onNotes = []
+    trackList[1].onNotes = []
+    trackList[2].onNotes = []
+    trackList[3].onNotes = []
+    trackList[0].onNotes = loadKicks
+    trackList[1].onNotes = loadSnares
+    trackList[2].onNotes = loadHho
+    trackList[3].onNotes =  loadHhc
+}
+
 
     let content = trackList.map((track, trackID) => {
         let key = trackID
         let { title, onNotes, soundFile, id } = track
-
         let soundFilePath = soundFiles[soundFile]
-      
-      console.log("loadedKicks", loadKicks)
-    console.log('loaded', loadedNotes)
-      console.log('id', trackID)
-
-      ///useEffect
-       
-
         return (
          <> 
 
@@ -115,7 +110,7 @@ let loadHhc = gettin.trackListInfo[3].notes
             {content}
         </div>
         <button onClick={(e) => saveIt()} > SAVE BEAT </ button>
-        <button onClick={(e) => console.log('fuck')} > LOAD BEAT </ button>
+        <button onClick={(e) => loadin()} > LOAD BEAT </ button>
         <p>Beat1 is the reset!</p>
         </>
     )

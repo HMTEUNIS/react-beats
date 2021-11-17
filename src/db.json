@@ -26,26 +26,27 @@
         {
           "name": "kick1",
           "notes": [
-            11,
-            7
+            3,
+            7,
+            10
           ]
         },
         {
           "name": "snare1",
           "notes": [
-            10
+            8
           ]
         },
         {
           "name": "hh_open1",
           "notes": [
-            11
+            10
           ]
         },
         {
           "name": "hh_closed1",
           "notes": [
-            11
+            12
           ]
         }
       ],
@@ -56,161 +57,33 @@
         {
           "name": "kick1",
           "notes": [
-            6
-          ]
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            2,
-            5
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
+            3,
+            7,
             10
           ]
         },
         {
-          "name": "hh_closed1",
-          "notes": [
-            10
-          ]
-        }
-      ],
-      "id": 3
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            4
-          ]
-        },
-        {
           "name": "snare1",
           "notes": [
-            4
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
-            4
-          ]
-        },
-        {
-          "name": "hh_closed1",
-          "notes": [
-            4
-          ]
-        }
-      ],
-      "id": 4
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            3
-          ]
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            3
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
-            4
-          ]
-        },
-        {
-          "name": "hh_closed1",
-          "notes": [
-            4
-          ]
-        }
-      ],
-      "id": 5
-    },
-    {
-      "trackListInfo": [
-        {
-          "notes": [
-            11
-          ]
-        },
-        {
-          "notes": [
-            10
-          ]
-        },
-        {
-          "notes": [
-            9
-          ]
-        },
-        {
-          "notes": [
-            9
-          ]
-        }
-      ],
-      "id": 6
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": []
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            11
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": []
-        },
-        {
-          "name": "hh_closed1",
-          "notes": []
-        }
-      ],
-      "id": 7
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            6,
-            11,
+            8,
             14
           ]
         },
         {
-          "name": "snare1",
-          "notes": []
-        },
-        {
           "name": "hh_open1",
-          "notes": []
+          "notes": [
+            10
+          ]
         },
         {
           "name": "hh_closed1",
-          "notes": []
+          "notes": [
+            12,
+            1
+          ]
         }
       ],
-      "id": 8
+      "id": 3
     }
   ]
 }
