@@ -29,7 +29,7 @@ const Note = ({
         toggleNote({ trackID, stepID })
         
         
-       
+    
     }
 
     return (

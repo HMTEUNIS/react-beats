@@ -1509,6 +1509,11 @@
   "resolved" "https://registry.npmjs.org/address/-/address-1.0.3.tgz"
   "version" "1.0.3"
 
+"adsr@^1.0.0":
+  "integrity" "sha1-p7wI5e+KceY2SryW/OffHESIHMM="
+  "resolved" "https://registry.npmjs.org/adsr/-/adsr-1.0.1.tgz"
+  "version" "1.0.1"
+
 "ajv-errors@^1.0.0":
   "integrity" "sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ=="
   "resolved" "https://registry.npmjs.org/ajv-errors/-/ajv-errors-1.0.1.tgz"
@@ -1752,6 +1757,11 @@
   "integrity" "sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg=="
   "resolved" "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   "version" "2.1.2"
+
+"audio-loader@^0.5.0":
+  "integrity" "sha1-nBJdGyXDPNliYIQFTZ9rfzHdyQg="
+  "resolved" "https://registry.npmjs.org/audio-loader/-/audio-loader-0.5.0.tgz"
+  "version" "0.5.0"
 
 "automation-events@^4.0.10":
   "integrity" "sha512-4K95JFAhehVkAVxY9EcOw0Gr3dkJsHC+/FzXefoLT4FgrFcI4ltnJEtHLQMZP4zCh6kcpPwD8ZUjVhIAEUjCug=="
@@ -5996,6 +6006,11 @@
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.2"
 
+"midimessage@^1.0.5":
+  "integrity" "sha1-rZnwTYY6BTolY9VTxb81BwtIgCw="
+  "resolved" "https://registry.npmjs.org/midimessage/-/midimessage-1.0.5.tgz"
+  "version" "1.0.5"
+
 "miller-rabin@^4.0.0":
   "integrity" "sha512-115fLhvZVqWwHPbClyntxEVfVDfl9DLLTuJvq3g2O/Oxi8AiNouAHvDSzHS0viUJc+V5vm3eq91Xwqn9dp4jRA=="
   "resolved" "https://registry.npmjs.org/miller-rabin/-/miller-rabin-4.0.1.tgz"
@@ -6293,6 +6308,16 @@
   "integrity" "sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg=="
   "resolved" "https://registry.npmjs.org/normalize-url/-/normalize-url-3.3.0.tgz"
   "version" "3.3.0"
+
+"note-parser@^1.1.0":
+  "integrity" "sha1-EunxflFFDsmU8TZKAZgsImZ7jms="
+  "resolved" "https://registry.npmjs.org/note-parser/-/note-parser-1.1.0.tgz"
+  "version" "1.1.0"
+
+"note-parser@^2.0.0":
+  "integrity" "sha1-JDj9V6RolLQCs6IHF5hmASnI+8E="
+  "resolved" "https://registry.npmjs.org/note-parser/-/note-parser-2.0.1.tgz"
+  "version" "2.0.1"
 
 "npm-run-path@^2.0.0":
   "integrity" "sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8="
@@ -8212,6 +8237,15 @@
   "resolved" "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
 
+"sample-player@^0.5.5":
+  "integrity" "sha1-vDW+o0Scb6lyUo8CKpu8KHIZVjc="
+  "resolved" "https://registry.npmjs.org/sample-player/-/sample-player-0.5.5.tgz"
+  "version" "0.5.5"
+  dependencies:
+    "adsr" "^1.0.0"
+    "midimessage" "^1.0.5"
+    "note-parser" "^1.1.0"
+
 "sane@^4.0.3":
   "integrity" "sha512-hhbzAgTIX8O7SHfp2c8/kREfEn4qO/9q8C9beyY6+tvZ87EpoZ3i1RIEvp27YBswnNbY9mWd6paKVmKbAgLfZA=="
   "resolved" "https://registry.npmjs.org/sane/-/sane-4.1.0.tgz"
@@ -8546,6 +8580,15 @@
   dependencies:
     "faye-websocket" "^0.10.0"
     "uuid" "^3.0.1"
+
+"soundfont-player@^0.12.0":
+  "integrity" "sha512-8BJIsAt7h1PK3thSZDgF6zecgGhYkK74JnZO8WRZi3h34qG6H/DYlnv7cpRvL7Q9C8N6qld4Qwj7nJsX1gYjEA=="
+  "resolved" "https://registry.npmjs.org/soundfont-player/-/soundfont-player-0.12.0.tgz"
+  "version" "0.12.0"
+  dependencies:
+    "audio-loader" "^0.5.0"
+    "note-parser" "^2.0.0"
+    "sample-player" "^0.5.5"
 
 "source-list-map@^2.0.0":
   "integrity" "sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw=="

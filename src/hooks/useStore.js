@@ -45,7 +45,7 @@ const Provider = ({ children }) => {
         } else {
             newOnNotes = onNotes.filter(col => col !== stepID)
         }
-       
+
 
         dispatch({
             type: 'SET_ON_NOTES',
@@ -54,7 +54,7 @@ const Provider = ({ children }) => {
 
         })
     }
-    
+
 
     const selectSequence = (sequenceID) => {
         dispatch({
@@ -73,5 +73,5 @@ const Provider = ({ children }) => {
 export {
     Provider,
     Context,
-    
+
 }

@@ -32,7 +32,7 @@ const ToolBar = ({
     function updateBPM(e) {
         setBPM(e.target.value)
     }
-   
+
 
     return (
         <nav className="toolbar">
@@ -69,7 +69,7 @@ const ToolBar = ({
                     })
                 }
             </select>
-         
+
         </nav>
     )
 }

@@ -9,6 +9,7 @@ import useStyles from './hooks/useStyles'
 import './App.css'
 import Keys from './Keys'
 import Nav from './components/Nav'
+import Piano from './components/Piano'
 
 function App() {
 
@@ -83,7 +84,10 @@ function App() {
                     <Keys />
                 </div>
             </main >
+            <Piano/>
         </Provider>
+        
+        
     )
 }
 
