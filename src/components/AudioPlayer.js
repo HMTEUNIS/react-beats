@@ -19,6 +19,7 @@ const AudioPlayer = () => {
     //setInstrument
     const Player = {
         setInstrument(instrumentName) {
+            
             SoundFontPlayer.instrument(audioContext, instrumentName)
                 .then(soundfontPlayer => {
                     soundPlayer = soundfontPlayer;

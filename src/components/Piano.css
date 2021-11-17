@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 .app-container {
     position: absolute;
     left: 0;
@@ -67,3 +69,7 @@
 select {
     max-height: 20px;
 } 
+#label {
+    font-family: 'EB Garamond', serif;
+    font-size: x-large;
+}
