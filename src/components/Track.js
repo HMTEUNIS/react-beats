@@ -3,7 +3,7 @@ import useSound from '../hooks/useSound'
 import Note from './Note'
 import './Track.css'
 
-const Track = ({
+let Track = ({
     trackID,
     currentStepID,
     title,
@@ -12,8 +12,7 @@ const Track = ({
     soundFilePath,
 }) => {
     const [play] = useSound(soundFilePath)
-    
-
+        
     const notes = [...Array(noteCount)].map((el, i) => {
         const isNoteOn = onNotes.indexOf(i) !== -1
         const isNoteOnCurrentStep = currentStepID === i

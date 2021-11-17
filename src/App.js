@@ -9,9 +9,14 @@ import useStyles from './hooks/useStyles'
 import './App.css'
 import Keys from './Keys'
 import Nav from './components/Nav'
+<<<<<<< HEAD
 import Piano from './components/Piano'
+=======
+import Saved from './Saved'
+>>>>>>> a65562e0a7cbfe7e85a37564ecb615011ef2fada
 
 function App() {
+     
 
     const baseBPMPerOneSecond = 60
     const stepsPerBar = 8
@@ -63,22 +68,60 @@ function App() {
     const trackListProps = {
         currentStepID
     }
+///retreiveing saved beats
+const [fetched, setFetched] = useState ([{
+    trackListInfo : [
+        {
+            "name": 'kick1',
+            "notes": []
+        },
+        {
+            "name": 'snare1',
+            "notes": []
+        },
+        {
+            "name": 'hh_open1',
+            "notes": []
+        },
+        {
+            "name": 'hh_open2',
+            "notes": []
+        }
+       
+    ], id: 1  }]
+)
+    useEffect(() => {
+    fetch ('http://localhost:4000/beats')
+  
+    .then(response => response.json())
+    .then(data => setFetched(data));
+    }, [])
+    
+
+    //sending saved beats
+    const [selected, setSelected] = useState (0)
+    //selected returns the ID of the beat clicked in the bar
+   
+    
 
     return (
         <Provider>
             <main className="app">
                 <Nav />
                 <header className="app_header">
-                    <h1 className="app_title">REACT-808</h1>
+                    <h1 className="app_title">REACT-BEATS</h1>
                     <ToolBar {...toolBarProps} />
+                  
                 </header>
                 <Steps count={totalSteps} />
                 <div className="app_content">
                     <PlayHead {...playHeadProps} />
-                    <TrackList {...trackListProps} />
+                    <TrackList {...trackListProps} selected={selected} fetched={fetched} />
+                    <Saved setSelected={setSelected} fetched={fetched} />
+                    
                 </div>
                 <footer className="app_footer">
-                    <a> Special Thanks to Joe Seifi for the React808 ap!</a>
+                    <a> Special Thanks to Joe Seifi for the React808 ap! Truely the backbone of this sequencer!</a>
                 </footer>
                 <div className="keys">
                     <Keys />
