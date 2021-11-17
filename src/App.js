@@ -9,6 +9,7 @@ import useStyles from './hooks/useStyles'
 import './App.css'
 import Keys from './Keys'
 import Nav from './components/Nav'
+import Piano from './components/Piano'
 import Saved from './Saved'
 
 function App() {
@@ -123,7 +124,10 @@ const [fetched, setFetched] = useState ([{
                     <Keys />
                 </div>
             </main >
+            <Piano/>
         </Provider>
+        
+        
     )
 }
 

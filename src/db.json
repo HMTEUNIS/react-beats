@@ -26,99 +26,28 @@
         {
           "name": "kick1",
           "notes": [
-            3,
-            7,
-            10
+            3
           ]
         },
         {
           "name": "snare1",
           "notes": [
-            8
+            5,
+            9
           ]
         },
         {
           "name": "hh_open1",
           "notes": [
-            10
+            6
           ]
         },
         {
           "name": "hh_closed1",
-          "notes": [
-            12
-          ]
+          "notes": []
         }
       ],
       "id": 2
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            3,
-            7,
-            10
-          ]
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            8,
-            14
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
-            10
-          ]
-        },
-        {
-          "name": "hh_closed1",
-          "notes": [
-            12,
-            1
-          ]
-        }
-      ],
-      "id": 3
-    },
-    {
-      "trackListInfo": [
-        {
-          "name": "kick1",
-          "notes": [
-            3,
-            7,
-            10
-          ]
-        },
-        {
-          "name": "snare1",
-          "notes": [
-            8,
-            14
-          ]
-        },
-        {
-          "name": "hh_open1",
-          "notes": [
-            10,
-            13,
-            0
-          ]
-        },
-        {
-          "name": "hh_closed1",
-          "notes": [
-            12,
-            5
-          ]
-        }
-      ],
-      "id": 4
     }
   ]
 }

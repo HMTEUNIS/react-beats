@@ -30,6 +30,8 @@ const sequenceList = [
                 
             }
         ]
+
+
     
         
     },
@@ -72,8 +74,8 @@ const soundFiles = {
     'snare1': '/sounds/snare1.wav',
     'hh_open1': '/sounds/hh_open1.wav',
     'hh_closed1': '/sounds/hh_closed1.wav',
-   
-    
+
+
 }
 
 export { sequenceList, soundFiles }
