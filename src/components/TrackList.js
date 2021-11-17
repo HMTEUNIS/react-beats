@@ -1,4 +1,4 @@
-import React, { useContext, memo } from 'react'
+import React, { useContext, memo, useState } from 'react'
 import { Context } from '../hooks/useStore'
 import { soundFiles } from '../constants/config'
 import Track from './Track'
@@ -6,7 +6,9 @@ import { context } from 'tone'
 
 const TrackList = ({ currentStepID, selected, fetched }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
+  
 
+    const [notes, setNotes] = useState ([])
 
     console.log('selected', selected)
     const toSave = trackList.map( track => {
@@ -59,23 +61,33 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
     }
 // use an if statement to say that if selected > 0 onNotes is the array in the id'd array
        const gettin = fetched[selected-1]
-    const content = trackList.map((track, trackID) => {
-        let { title, onNotes, soundFile } = track
-        const soundFilePath = soundFiles[soundFile]
-            console.log(fetched)
-        
-        console.log("find", gettin.trackListInfo)
-           
-        //
+      
+    let content = trackList.map((track, trackID) => {
+        let key = trackID
+        let { title, onNotes, soundFile, id } = track
 
-            
-    
-       
+        let soundFilePath = soundFiles[soundFile]
+      let runningNotes = track.onNotes
+      let loadedNotes = gettin.trackListInfo
+      let loadKicks = gettin.trackListInfo[0].notes
+      let loadSnares = gettin.trackListInfo[1].notes
+      let loadHho = gettin.trackListInfo[2].notes
+      let loadHhc = gettin.trackListInfo[3].notes
+      console.log("loadedKicks", loadKicks)
+      console.log("memo", memo )
+    console.log('loaded', loadedNotes)
+      console.log('runningNotes', runningNotes)
+      console.log('id', trackID)
+
+      ///useEffect
+       onNotes = loadKicks
+
         return (
-         <>
-         
+         <> 
+
             <Track
             
+                id = {id}
                 key={title}
                 trackID={+trackID}
                 currentStepID={currentStepID}
@@ -84,25 +96,21 @@ const TrackList = ({ currentStepID, selected, fetched }) => {
                 onNotes={onNotes}
                 soundFilePath={soundFilePath}
             />
-            
-           
-            
             </>
         )
     })
     
-     
-
     return (
         <>
         
-      
+
         <div className="track-list">
+        
             {content}
-            
         </div>
         <button onClick={(e) => saveIt()} > SAVE BEAT </ button>
-        
+        <button onClick={(e) => console.log('fuck')} > LOAD BEAT </ button>
+        <p>Beat1 is the reset!</p>
         </>
     )
 }

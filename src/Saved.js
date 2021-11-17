@@ -1,5 +1,4 @@
 import React from 'react'
-import Span from './Span'
 
 const Saved = ({fetched, setSelected}) => {
     
