@@ -1,4 +1,9 @@
 .span {
-    font-size: large;
     color: blue;
+    border-radius: 10px;
+}
+
+
+button:active{
+    background-color: aqua;
 }

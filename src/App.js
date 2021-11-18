@@ -110,7 +110,7 @@ const [re, setre] = useState (false)
                 <header className="app_header">
                     <h1 className="app_title">REACT-BEATS</h1>
                     <ToolBar {...toolBarProps} />
-                  
+                
                 </header>
                 <Steps count={totalSteps} />
                 <div className="app_content">
@@ -127,6 +127,7 @@ const [re, setre] = useState (false)
                 </div>
             </main >
             <Piano/>
+            <p className='thanks'>Special thanks to <a href='https://dev.to/ganeshmani'>Ganesh Mani</a> for the piano tutorial</p>
         </Provider>
         
         

@@ -19,16 +19,6 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	color: chartreuse;
 }
-.span {
-	font-family: 'quartz-regular', sans-serif;  -webkit-font-smoothing: antialiased;
-    font-size: large;
-    color: rgb(38, 0, 255);
-	padding: 1%;
-	border: 1px;
-}
-span:hover{
-	text-shadow: 1px 1px 5px  #087fa3;
-}
 
 body {
 	font-family: 'quartz-regular', sans-serif;  -webkit-font-smoothing: antialiased;

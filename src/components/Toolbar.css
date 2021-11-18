@@ -5,7 +5,7 @@
     align-items: center;
   }
 
- 
+
 
   .button_play_pause, .button_stop {
     width: var(--button-pause-play-width);

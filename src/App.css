@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 :root {
   --app-max-width: 0;
@@ -67,4 +68,17 @@ html {
   margin: auto;
   margin-top: 1px;
   margin-bottom: 1px;
+  border-radius: 20px;
+  border: none;
+}
+
+button {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  font-size: large;
+  margin: 1px
+}
+
+.thanks {
+  color: black;
 }
