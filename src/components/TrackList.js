@@ -7,8 +7,16 @@ import { context } from 'tone'
 const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
   
-
-    const [notes, setNotes] = useState ([])
+    const [soundFileSelection,setSoundFileSelection] = useState({
+        'Kick': trackList[0].soundFile,
+        'Snare': trackList[1].soundFile,
+        'Open Hat': trackList[2].soundFile,
+        'Closed Hat': trackList[3].soundFile,
+        // 'cymbal': trackList[4].soundFile
+    })
+    const handleSoundSelection = (e) => {
+        setSoundFileSelection({...soundFileSelection, [e.target.id]:e.target.value})
+    }
 
     let toSave = trackList.map( track => {
        
@@ -18,6 +26,8 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
         } 
     return    soundSave
     })
+    console.log(selected)
+    console.log('re',re)
     function saveIt (e) {
           
 
@@ -41,41 +51,83 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             }
            
         ]  }
+        
 
-        fetch('http://localhost:4000/beats', {
-            method: 'POST', 
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newBeat),
-          })
-          .then(res => res.json())
-          .then(data => setre(!re) )
-          .catch((error) => {
-            console.error('Error:', error);
-          });
-    }
-    function deleteTrack (e) {
-        fetch(`http://localhost:4000/beats/${selected}`, {
-  method: 'DELETE', 
+   console.log(newBeat)
+
+          fetch(`http://localhost:4000/beats/${selected+1}`, {
+  method: 'PATCH', 
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(newBeat),
 })
 .then(res => res.json())
 .then(data => {
-    setre(!re);
+  setre(!re);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+    }
+
+    function del (e) {
+          
+
+        let newBeat ={ 
+        trackListInfo : [
+            {
+                "name": toSave[0].name,
+                "notes": []
+            },
+            {
+                "name": toSave[1].name,
+                "notes": []
+            },
+            {
+                "name": toSave[2].name,
+                "notes": []
+            },
+            {
+                "name": toSave[3].name,
+                "notes": []
+            }
+           
+        ]  }
+        
+
+   console.log(newBeat)
+
+          fetch(`http://localhost:4000/beats/${selected+1}`, {
+  method: 'PATCH', 
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(newBeat),
+})
+.then(res => res.json())
+.then(data => {
+  setre(!re);
 })
 .catch((error) => {
   console.error('Error:', error);
 });
     }
     
+    
 const gettin = fetched[selected]
 
-let loadedNotes = gettin.trackListInfo
 let loadKicks = gettin.trackListInfo[0].notes
 let loadSnares = gettin.trackListInfo[1].notes
 let loadHho = gettin.trackListInfo[2].notes
 let loadHhc = gettin.trackListInfo[3].notes
 
+const savedTrackSounds = {
+    kickTrack : gettin.trackListInfo[0].name,
+    snareTrack : gettin.trackListInfo[1].name,
+    ohhTrack : gettin.trackListInfo[2].name,
+    chhTrack : gettin.trackListInfo[3].name
+}
 
 function loadin (e){
     trackList[0].onNotes = []
@@ -85,9 +137,19 @@ function loadin (e){
     trackList[0].onNotes = loadKicks
     trackList[1].onNotes = loadSnares
     trackList[2].onNotes = loadHho
-    trackList[3].onNotes =  loadHhc
+    trackList[3].onNotes = loadHhc
+
+    trackList[0].name = savedTrackSounds.kickTrack
+    trackList[1].name = savedTrackSounds.snareTrack
+    trackList[2].name = savedTrackSounds.ohhTrack
+    trackList[3].name = savedTrackSounds.chhTrack
 }
 
+    const tempTrackList = [...trackList]
+        tempTrackList.map((track)=>{
+            const title = track.title
+            track.soundFile = soundFileSelection[title]
+        })
 
     let content = trackList.map((track, trackID) => {
         let key = trackID
@@ -106,6 +168,7 @@ function loadin (e){
                 noteCount={noteCount}
                 onNotes={onNotes}
                 soundFilePath={soundFilePath}
+                handleSoundSelection={handleSoundSelection}
             />
             </>
         )
@@ -119,10 +182,13 @@ function loadin (e){
         
             {content}
         </div>
-        <button className="tlButtons" onClick={(e) => saveIt()} > SAVE THIS BEAT </ button>
+        <button className="tlButtons" onClick={(e) => saveIt()} > SAVE TO SELECTED </ button>
         <button className="tlButtons"  onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
-        <button className="tlButtons"  onClick={(e) => deleteTrack()} >DELETE SELECTED BEAT</button>
-        <p>Beat1 is the reset! It is the default on load and we highly suggest not deleting it.</p>
+        <br />
+            <button onClick={(e) => del()}>DELETE SELECTED</button>
+        <p1> Beat {selected} Selected!</p1>
+       
+        <p>DO NOT CLICK ON BEAT 6 SHE HATES IT</p>
         </>
     )
 }
