@@ -11,7 +11,7 @@ import Keys from './Keys'
 import Nav from './components/Nav'
 import Piano from './components/Piano'
 import Saved from './Saved'
-
+import Home from './Home'
 function App() {
      
 
@@ -104,6 +104,8 @@ const [re, setre] = useState (false)
     
 
     return (
+        <>
+        <Home />
         <Provider>
             <main className="app">
                 <Nav />
@@ -129,7 +131,7 @@ const [re, setre] = useState (false)
             <Piano/>
             <p className='thanks'>Special thanks to <a href='https://dev.to/ganeshmani'>Ganesh Mani</a> for the piano tutorial</p>
         </Provider>
-        
+        </>
         
     )
 }
