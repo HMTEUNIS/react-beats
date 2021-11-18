@@ -24,32 +24,20 @@
     {
       "trackListInfo": [
         {
-          "name": "kick2",
-          "notes": [
-            8,
-            12,
-            7
-          ]
+          "name": "kick4",
+          "notes": []
         },
         {
-          "name": "snare1",
-          "notes": [
-            8
-          ]
+          "name": "snare4",
+          "notes": []
         },
         {
           "name": "hh_open1",
-          "notes": [
-            6,
-            14
-          ]
+          "notes": []
         },
         {
           "name": "hh_closed1",
-          "notes": [
-            3,
-            10
-          ]
+          "notes": []
         }
       ],
       "id": 2
@@ -57,11 +45,11 @@
     {
       "trackListInfo": [
         {
-          "name": "kick2",
+          "name": "kick4",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare4",
           "notes": []
         },
         {
@@ -78,40 +66,20 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
-          "notes": [
-            0,
-            4,
-            8,
-            12
-          ]
+          "name": "kick4",
+          "notes": []
         },
         {
-          "name": "snare1",
-          "notes": [
-            1,
-            5,
-            9,
-            13
-          ]
+          "name": "snare4",
+          "notes": []
         },
         {
           "name": "hh_open1",
-          "notes": [
-            2,
-            6,
-            10,
-            14
-          ]
+          "notes": []
         },
         {
           "name": "hh_closed1",
-          "notes": [
-            3,
-            7,
-            11,
-            15
-          ]
+          "notes": []
         }
       ],
       "id": 4
@@ -119,11 +87,11 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick4",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare4",
           "notes": []
         },
         {
@@ -140,11 +108,11 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick4",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare4",
           "notes": []
         },
         {
