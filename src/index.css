@@ -22,12 +22,12 @@ time, mark, audio, video {
 .span {
 	font-family: 'quartz-regular', sans-serif;  -webkit-font-smoothing: antialiased;
     font-size: large;
-    color: rgb(59, 202, 15);
+    color: rgb(38, 0, 255);
 	padding: 1%;
 	border: 1px;
+}
+span:hover{
 	text-shadow: 1px 1px 5px  #087fa3;
-	
-	
 }
 
 body {

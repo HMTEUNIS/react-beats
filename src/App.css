@@ -62,7 +62,9 @@ html {
   background: transparent;
 }
 
-.span {
-  color: rgb(38, 0, 255);
-  
+.tlButtons {
+  min-width: 200px;
+  margin: auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
