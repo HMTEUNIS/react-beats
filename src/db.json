@@ -24,35 +24,31 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick2",
           "notes": [
-            3,
-            6,
-            1
+            8,
+            12,
+            7
           ]
         },
         {
           "name": "snare1",
           "notes": [
-            10
+            8
           ]
         },
         {
           "name": "hh_open1",
           "notes": [
-            3,
-            5,
-            10
+            6,
+            14
           ]
         },
         {
           "name": "hh_closed1",
           "notes": [
-            10,
-            7,
-            5,
-            13,
-            14
+            3,
+            10
           ]
         }
       ],
@@ -61,7 +57,7 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick2",
           "notes": []
         },
         {
