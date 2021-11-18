@@ -1,9 +1,13 @@
 .span {
     color: blue;
-    border-radius: 10px;
+    border-radius: 10px;min-width: 80px;
 }
 
 
 button:active{
+    background-color: aqua;
+}
+
+.spanOn {
     background-color: aqua;
 }
