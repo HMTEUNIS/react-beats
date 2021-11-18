@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Tutorial.css"
+import {Link} from "react-router-dom"
 
 const Tutorial = () => {
     return (
@@ -11,7 +12,7 @@ const Tutorial = () => {
             <p4>If you look at the above .gif you can get the general flow.</p4><br /><p4> A note from us, the developers: it's best to change the beat while the clock is rolling.</p4>
             <br />
              <p2> That being said, Hack it to shit and and do whatever you want. Send us the repo (if you want) we're happy to have done some of the work for you.</p2>
-       <br /> <button className="apbtn" >Lets go!</button>
+       <br /> <Link to= '/app'> <button className="apbtn"  >Lets go!</button></ Link>
         </div>
     )
 }
