@@ -25,7 +25,7 @@ time, mark, audio, video {
     color: rgb(59, 202, 15);
 	padding: 1%;
 	border: 1px;
-	text-shadow: 1px 1px #00ff2a;
+	text-shadow: 1px 1px 5px  #087fa3;
 	
 	
 }
@@ -44,7 +44,7 @@ p {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	color: rgb(255, 8, 0);
+	color: rgb(255, 38, 0);
 	text-align: center;
 	vertical-align: baseline;
 }

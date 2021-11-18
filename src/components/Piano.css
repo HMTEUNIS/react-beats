@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .app-container {
     position: absolute;
@@ -68,8 +68,11 @@
 
 select {
     max-height: 20px;
+    margin: 5px;
 } 
 #label {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Indie Flower', cursive;
     font-size: x-large;
+    color: aqua;
+    padding-right: 10px;
 }

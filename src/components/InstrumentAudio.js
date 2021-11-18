@@ -21,7 +21,6 @@ const InstrumentAudio = ({ instrumentName, notes }) => {
     }, [notes]);
 
     const setInstrument = () => {
-        console.log("Instrument")
         instrumentPlayer.setInstrument(instrumentName);
     };
 

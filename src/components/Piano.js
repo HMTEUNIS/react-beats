@@ -7,8 +7,7 @@ const Piano = () => {
 
     function handleChange(e) {
         setInstrumentName(e.target.value)
-        console.log(e.target.value)
-        console.log(instrumentName)
+
     }
 
     const accidentalKey = ({ isPlaying, text, eventHandlers }) => {
@@ -67,8 +66,21 @@ const Piano = () => {
         <div className="piano-container">
             <label id="label">Choose an instrument</label>
                 <select onChange={handleChange} id='instruments' name='instruments'>
-                    <option value= "acoustic_grand_piano">acoustic grand piano</option>
+                    <option value="acoustic_grand_piano">acoustic grand piano</option>
+                    <option value="acoustic_guitar_steel">acoustic guitar</option>
                     <option value="banjo">banjo</option>
+                    <option value="synth_drum">drum pad</option>
+                    <option value="overdriven_guitar">electric guitar</option>
+                    <option value="electric_piano_2">electric piano</option>
+                    <option value="fx_8_scifi">Sci-fi</option>
+                    <option value="glockenspiel">glockenspiel</option>
+                    <option value="honkytonk_piano">honkytonk piano</option>
+                    <option value="koto">koto</option>
+                    <option value="rock_organ">organ</option>
+                    <option value="pad_3_polysynth">polysynth</option>
+                    <option value="sitar">sitar</option>
+                    <option value="steel_drums">steel drums</option>
+                    <option value="vibraphone">vibraphone</option>
                 </select>
             <Instrument
                 instrumentName={instrumentName}

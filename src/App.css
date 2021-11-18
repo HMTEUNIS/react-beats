@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
 :root {
   --app-max-width: 0;
   --app-visibility: hidden;
+  background-image: linear-gradient(to right,rgb(255, 0, 85), rgb(212, 0, 255), cyan); ;
 }
 
 html {
@@ -13,8 +16,8 @@ html {
   margin-right: auto;
   width: var(--app-max-width);
   visibility: var(--app-visibility);
- 
   padding: 20px;
+  background-color:rgb(168, 162, 162);
 }
 
 @media only screen and (min-width: 820px) {
@@ -34,11 +37,12 @@ html {
 }
 
 .app_title {
-  font-family: 'quartz-regular', sans-serif;  -webkit-font-smoothing: antialiased;
-
-  font-size: 2.2rem;
+  font-family: 'Sigmar One', cursive;
+  font-size: 2.5rem;
   font-weight: 200;
   flex: 1;
+  text-align: left;
+  color: black;
 }
 
 .app_content {
@@ -56,4 +60,9 @@ html {
   text-align: center;
   color: var(--color-dark-grey);
   background: transparent;
+}
+
+.span {
+  color: rgb(38, 0, 255);
+  
 }
