@@ -11,3 +11,7 @@ button:active{
 .spanOn {
     background-color: aqua;
 }
+
+#\36 {
+    display: none;
+}

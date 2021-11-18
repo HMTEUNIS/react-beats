@@ -1,32 +1,25 @@
-# React 808
+# React Beats
 
-## JavaScript based 808 Drum Machine built using React.js and hooks API
-
-
- [![React 808 Screenshot](https://raw.githubusercontent.com/joeshub/react-808/master/screenshot.png)](https://github.com/joeshub/react-808)
+## JavaScript based 808 Drum Machine and Piano built using React.js and hooks
 
 
-### Development
-* fork / clone the repo
-* run `yarn` && `yarn start`
+ [![React Beats](https://i.ibb.co/wwQSbwb/Untitled.png)](https://github.com/HMTEUNIS/react-beats)
+
+
+### Set Up
+1. When you first navigate inside the directory run `npm install` and `code .`
+2. After your VS Code opens, in your terminal run `cd src` then `json-server --watch --port 4000 db.json`
+3. In VS Code open a new terminal and run `npm start`
+
 
 ### Features
-* 4 Audio Tracks
+* 4 Audio tracks, each with 6 different sounds
 * 2 Bars, 8 Steps
-* Load existing sequences
+* Save/Load/Delete user beats
 * Edit notes to create custom loops
 * Change BPM
 * Play/Pause/Stop
-* Works in Chrome, FireFox, Safari, iOS
+* Play piano using keyboard
+* Choose from different 15 sounds 
 
-### Wish list
-* Customize UI for handheld viewports
-* User authentication
-* Save custom sequences
-* Load custom sequences by either user profile or custom URL
-* Add / Edit / Remove tracks
-* Create custom tracks
-* Audio effects
-* Change Timing signatures
-* Change steps per Bar on grid
-* Showcase user sequences
+

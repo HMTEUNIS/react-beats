@@ -1,10 +1,8 @@
 import React from 'react'
 import './Saved.css'
-
 const Saved = ({fetched, setSelected, selected, re, setre}) => {
     
-    const displayBeats = fetched.map (beat =>  <button className="span" id={beat.id} onClick={() => setSelected(beat.id-1)} >Beat {beat.id}</button>)
-
+    const displayBeats = fetched.map (beat =>  <button className="span" id={beat.id} onClick={() => setSelected(beat.id)} >Beat {beat.id}</button>)
     return (
         <div>
             {displayBeats}
@@ -13,5 +11,4 @@ const Saved = ({fetched, setSelected, selected, re, setre}) => {
     )
 }
         
-
 export default Saved
