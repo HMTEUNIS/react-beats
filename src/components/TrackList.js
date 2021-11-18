@@ -17,6 +17,8 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
         } 
     return    soundSave
     })
+    console.log(selected)
+    console.log('re',re)
     function saveIt (e) {
           
 
@@ -42,21 +44,66 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
         ]  }
         
 
-        fetch('http://localhost:4000/beats', {
-            method: 'POST', 
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(newBeat),
-          })
-          .then(res => res.json())
-          .then(data => setre(!re) )
-          .catch((error) => {
-            console.error('Error:', error);
-          });
+   console.log(newBeat)
+
+          fetch(`http://localhost:4000/beats/${selected+1}`, {
+  method: 'PATCH', 
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(newBeat),
+})
+.then(res => res.json())
+.then(data => {
+  setre(!re);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
     }
 
+    function del (e) {
+          
 
+        let newBeat ={ 
+        trackListInfo : [
+            {
+                "name": toSave[0].name,
+                "notes": []
+            },
+            {
+                "name": toSave[1].name,
+                "notes": []
+            },
+            {
+                "name": toSave[2].name,
+                "notes": []
+            },
+            {
+                "name": toSave[3].name,
+                "notes": []
+            }
+           
+        ]  }
+        
+
+   console.log(newBeat)
+
+          fetch(`http://localhost:4000/beats/${selected+1}`, {
+  method: 'PATCH', 
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(newBeat),
+})
+.then(res => res.json())
+.then(data => {
+  setre(!re);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+    }
     
     
 const gettin = fetched[selected]
@@ -109,10 +156,13 @@ function loadin (e){
         
             {content}
         </div>
-        <button className="tlButtons" onClick={(e) => saveIt()} > SAVE THIS BEAT </ button>
+        <button className="tlButtons" onClick={(e) => saveIt()} > SAVE TO SELECTED </ button>
         <button className="tlButtons"  onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
+        <br />
+            <button onClick={(e) => del()}>DELETE SELECTED</button>
+        <p1> Beat {selected} Selected!</p1>
        
-        <p>Beat1 is the reset! It is the default on load and we highly suggest not deleting it.</p>
+        <p>DO NOT CLICK ON BEAT 6 SHE HATES IT</p>
         </>
     )
 }
