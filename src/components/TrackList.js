@@ -7,7 +7,16 @@ import { context } from 'tone'
 const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
   
-
+    const [soundFileSelection,setSoundFileSelection] = useState({
+        'Kick': trackList[0].soundFile,
+        'Snare': trackList[1].soundFile,
+        'Open Hat': trackList[2].soundFile,
+        'Closed Hat': trackList[3].soundFile,
+        // 'cymbal': trackList[4].soundFile
+    })
+    const handleSoundSelection = (e) => {
+        setSoundFileSelection({...soundFileSelection, [e.target.id]:e.target.value})
+    }
 
     let toSave = trackList.map( track => {
        
@@ -113,6 +122,12 @@ let loadSnares = gettin.trackListInfo[1].notes
 let loadHho = gettin.trackListInfo[2].notes
 let loadHhc = gettin.trackListInfo[3].notes
 
+const savedTrackSounds = {
+    kickTrack : gettin.trackListInfo[0].name,
+    snareTrack : gettin.trackListInfo[1].name,
+    ohhTrack : gettin.trackListInfo[2].name,
+    chhTrack : gettin.trackListInfo[3].name
+}
 
 function loadin (e){
     trackList[0].onNotes = []
@@ -123,8 +138,18 @@ function loadin (e){
     trackList[1].onNotes = loadSnares
     trackList[2].onNotes = loadHho
     trackList[3].onNotes = loadHhc
+
+    trackList[0].name = savedTrackSounds.kickTrack
+    trackList[1].name = savedTrackSounds.snareTrack
+    trackList[2].name = savedTrackSounds.ohhTrack
+    trackList[3].name = savedTrackSounds.chhTrack
 }
 
+    const tempTrackList = [...trackList]
+        tempTrackList.map((track)=>{
+            const title = track.title
+            track.soundFile = soundFileSelection[title]
+        })
 
     let content = trackList.map((track, trackID) => {
         let key = trackID
@@ -143,6 +168,7 @@ function loadin (e){
                 noteCount={noteCount}
                 onNotes={onNotes}
                 soundFilePath={soundFilePath}
+                handleSoundSelection={handleSoundSelection}
             />
             </>
         )

@@ -25,19 +25,35 @@
       "trackListInfo": [
         {
           "name": "kick1",
-          "notes": []
+          "notes": [
+            3,
+            6,
+            1
+          ]
         },
         {
           "name": "snare1",
-          "notes": []
+          "notes": [
+            10
+          ]
         },
         {
           "name": "hh_open1",
-          "notes": []
+          "notes": [
+            3,
+            5,
+            10
+          ]
         },
         {
           "name": "hh_closed1",
-          "notes": []
+          "notes": [
+            10,
+            7,
+            5,
+            13,
+            14
+          ]
         }
       ],
       "id": 2
