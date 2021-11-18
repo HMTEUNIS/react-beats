@@ -116,7 +116,7 @@ const [re, setre] = useState (false)
                 <div className="app_content">
                     <PlayHead {...playHeadProps} />
                     <TrackList {...trackListProps} selected={selected} fetched={fetched} re={re} setre={setre} />
-                    <Saved setSelected={setSelected} fetched={fetched} />
+                    <Saved setSelected={setSelected} re={re} setre={setre} selected={selected} fetched={fetched} />
                     
                 </div>
                 <footer className="app_footer">

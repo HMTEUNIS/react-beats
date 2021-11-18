@@ -8,7 +8,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
   
 
-    const [notes, setNotes] = useState ([])
 
     let toSave = trackList.map( track => {
        
@@ -41,6 +40,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             }
            
         ]  }
+        
 
         fetch('http://localhost:4000/beats', {
             method: 'POST', 
@@ -55,22 +55,12 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             console.error('Error:', error);
           });
     }
-    function deleteTrack (e) {
-        fetch(`http://localhost:4000/beats/${selected}`, {
-  method: 'DELETE', 
-})
-.then(res => res.json())
-.then(data => {
-    setre(!re);
-})
-.catch((error) => {
-  console.error('Error:', error);
-});
-    }
+
+
+    
     
 const gettin = fetched[selected]
 
-let loadedNotes = gettin.trackListInfo
 let loadKicks = gettin.trackListInfo[0].notes
 let loadSnares = gettin.trackListInfo[1].notes
 let loadHho = gettin.trackListInfo[2].notes
@@ -85,7 +75,7 @@ function loadin (e){
     trackList[0].onNotes = loadKicks
     trackList[1].onNotes = loadSnares
     trackList[2].onNotes = loadHho
-    trackList[3].onNotes =  loadHhc
+    trackList[3].onNotes = loadHhc
 }
 
 
@@ -121,7 +111,7 @@ function loadin (e){
         </div>
         <button className="tlButtons" onClick={(e) => saveIt()} > SAVE THIS BEAT </ button>
         <button className="tlButtons"  onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
-        <button className="tlButtons"  onClick={(e) => deleteTrack()} >DELETE SELECTED BEAT</button>
+       
         <p>Beat1 is the reset! It is the default on load and we highly suggest not deleting it.</p>
         </>
     )
