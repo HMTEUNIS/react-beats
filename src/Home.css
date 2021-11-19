@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+
 #root > div {
     text-align: center;
     margin-top: 30%;
@@ -6,10 +8,14 @@
     button:active{
         background-color: aqua;
     }
-    .spanOn {
-        background-color: aqua;
-    }
+   
     p2 {
-        font-size: smaller;
-        color: rgb(0, 255, 234);
+        font-size: small;
+        color: rgb(0, 255, 213);
+    }
+
+    .homeHead {
+        font-family: 'Genos', sans-serif;
+        font-size: 100px;
+        color: aqua;
     }

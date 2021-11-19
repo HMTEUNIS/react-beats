@@ -136,6 +136,7 @@ const [re, setre] = useState (false)
                     <Keys />
                 </div>
             </main >
+            <img src='https://media0.giphy.com/media/ZE5DmCqNMr3yDXq1Zu/200w.gif' alt='rick'></img>
             <Piano/>
             <p className='thanks'>Special thanks to <a href='https://dev.to/ganeshmani'>Ganesh Mani</a> for the piano tutorial</p>
         </Provider>
