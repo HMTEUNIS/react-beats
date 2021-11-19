@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
   .track {
     display: flex;
@@ -18,4 +19,15 @@
 
   .track_notes {
     display: flex;
+  }
+
+  .track-select{
+    width: 128px;
+    border-radius: 25px;
+    text-align: center;
+    color:  blue;
+    font-family: "architects daughter",cursive;
+    font-weight: bold;
+    -webkit-appearance: menulist-button;
+    height: 50px;
   }

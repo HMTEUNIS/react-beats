@@ -26,29 +26,37 @@
         {
           "name": "kick2",
           "notes": [
+            0,
+            4,
             8,
-            12,
-            7
+            12
           ]
         },
         {
-          "name": "snare1",
+          "name": "snare3",
           "notes": [
-            8
+            1,
+            5,
+            9,
+            13
           ]
         },
         {
-          "name": "hh_open1",
+          "name": "hh_open4",
           "notes": [
+            2,
             6,
+            10,
             14
           ]
         },
         {
-          "name": "hh_closed1",
+          "name": "hh_closed2",
           "notes": [
             3,
-            10
+            7,
+            11,
+            15
           ]
         }
       ],
@@ -61,15 +69,15 @@
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare3",
           "notes": []
         },
         {
-          "name": "hh_open1",
+          "name": "hh_open4",
           "notes": []
         },
         {
-          "name": "hh_closed1",
+          "name": "hh_closed2",
           "notes": []
         }
       ],
