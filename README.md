@@ -3,7 +3,7 @@
 ## JavaScript based 808 Drum Machine and Piano built using React.js and hooks
 
 
- [![React Beats](https://i.ibb.co/xscMfSW/Untitled2.png)](https://github.com/HMTEUNIS/react-beats)
+ [![React Beats](https://i.ibb.co/DY5f1BF/Untitled.png)](https://github.com/HMTEUNIS/react-beats)
 
 
 ### Set Up

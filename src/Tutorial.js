@@ -9,7 +9,7 @@ const Tutorial = () => {
          <br />
          <p2>Feel free to try and get this thing to work any way you want it to work. You can't load it as a plugin to your favorite daw, but you can record it a la your headphone jack! Last night I plugged it into a line of pedals and had a great time. Think of it more like hardware than software.
             </p2> <br />
-            <img className='tut' src='https://im4.ezgif.com/tmp/ezgif-4-9e43d1fdd1f8.gif' alt='tut'></img>
+            <img className='tut' src='https://s1.gifyu.com/images/202111182013291.gif' alt='tut'/>
             <p4>If you look at the above .gif you can get the general flow.</p4><br /><p4> A note from us, the developers: it's best to change the beat while the clock is rolling.</p4>
             <br />
              <p2> That being said, Hack it to shit and and do whatever you want. Send us the repo (if you want) we're happy to have done some of the work for you.</p2>

@@ -33,7 +33,7 @@ let Track = ({
     })
 
     const selectedTrackSound = soundFile
-    console.log(selectedTrackSound)
+    
     
     let trackOptions;
     
