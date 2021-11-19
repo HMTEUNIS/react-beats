@@ -189,7 +189,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             <button className="tlButtons" onClick={(e) => loadin()} > LOAD SELECTED BEAT </ button>
             <br />
             <button className="tlButtons" onClick={(e) => del()}>CLEAR SELECTED</button>
-            <p1> Beat {selected} Selected!</p1>
+            <p1> Beat {selected} Selected! </p1>
         </>
     )
 }

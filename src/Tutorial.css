@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
 
 #root > div {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #root > div > p3 {
@@ -17,6 +17,18 @@
     font-family: 'Genos', sans-serif;
     
 }
- p2 {
-     font-size: larger;
- }
+p2 {
+    font-size: larger;
+    color: blanchedalmond;
+}
+
+.tut {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+p4 {
+    font-weight: bold;
+}
