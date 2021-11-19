@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,4 +49,8 @@ p1{
 	color: rgb(0, 255, 34);
 	text-align: center;
 background-color: black;
+font-family: 'Architects Daughter', cursive;
+margin: auto;
+border-radius: 5px;
+margin-top: 5px;
 }

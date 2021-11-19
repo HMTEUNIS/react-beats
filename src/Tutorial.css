@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+
 #root > div {
     margin-top: 10%;
 }
@@ -5,11 +7,16 @@
 #root > div > p3 {
    
     font-size: 100px;
-    text-shadow: 9px 7px rgb(31, 194, 194);
+    text-shadow: none;
+    font-family: 'Genos', sans-serif;
 }
 
 #root > div > p4 {
     font-size: xx-large;
-    text-shadow: 2px 2px rgb(31, 194, 194);
+    text-shadow: none;
+    font-family: 'Genos', sans-serif;
+    
 }
-
+ p2 {
+     font-size: larger;
+ }
