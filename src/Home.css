@@ -1,0 +1,15 @@
+#root > div {
+    text-align: center;
+    margin-top: 30%;
+    padding: 2px;
+    }
+    button:active{
+        background-color: aqua;
+    }
+    .spanOn {
+        background-color: aqua;
+    }
+    p2 {
+        font-size: smaller;
+        color: rgb(0, 255, 234);
+    }

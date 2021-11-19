@@ -11,6 +11,9 @@ import Keys from './Keys'
 import Nav from './components/Nav'
 import Piano from './components/Piano'
 import Saved from './Saved'
+import Home from './Home'
+import Tutorial from './Tutorial'
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
      
@@ -104,6 +107,13 @@ const [re, setre] = useState (false)
     
 
     return (
+       
+            
+        <Router>
+       <Route exact path="/" component={Home} /> 
+       <Route exact path="/tutorial" component={Tutorial} />  
+               
+            <Route path="/app">
         <Provider>
             <main className="app">
                 <Nav />
@@ -129,6 +139,10 @@ const [re, setre] = useState (false)
             <Piano/>
             <p className='thanks'>Special thanks to <a href='https://dev.to/ganeshmani'>Ganesh Mani</a> for the piano tutorial</p>
         </Provider>
+        
+        </Route>
+      
+        </Router>
         
         
     )

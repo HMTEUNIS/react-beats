@@ -24,40 +24,20 @@
     {
       "trackListInfo": [
         {
-          "name": "kick2",
-          "notes": [
-            0,
-            4,
-            8,
-            12
-          ]
+          "name": "kick3",
+          "notes": []
         },
         {
-          "name": "snare3",
-          "notes": [
-            1,
-            5,
-            9,
-            13
-          ]
+          "name": "snare6",
+          "notes": []
         },
         {
-          "name": "hh_open4",
-          "notes": [
-            2,
-            6,
-            10,
-            14
-          ]
+          "name": "hh_open2",
+          "notes": []
         },
         {
-          "name": "hh_closed2",
-          "notes": [
-            3,
-            7,
-            11,
-            15
-          ]
+          "name": "hh_closed3",
+          "notes": []
         }
       ],
       "id": 2
@@ -65,19 +45,19 @@
     {
       "trackListInfo": [
         {
-          "name": "kick2",
+          "name": "kick3",
           "notes": []
         },
         {
-          "name": "snare3",
+          "name": "snare6",
           "notes": []
         },
         {
-          "name": "hh_open4",
+          "name": "hh_open2",
           "notes": []
         },
         {
-          "name": "hh_closed2",
+          "name": "hh_closed3",
           "notes": []
         }
       ],
@@ -86,19 +66,19 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick3",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare6",
           "notes": []
         },
         {
-          "name": "hh_open1",
+          "name": "hh_open2",
           "notes": []
         },
         {
-          "name": "hh_closed1",
+          "name": "hh_closed3",
           "notes": []
         }
       ],
@@ -107,19 +87,19 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick3",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare6",
           "notes": []
         },
         {
-          "name": "hh_open1",
+          "name": "hh_open2",
           "notes": []
         },
         {
-          "name": "hh_closed1",
+          "name": "hh_closed3",
           "notes": []
         }
       ],
@@ -128,19 +108,19 @@
     {
       "trackListInfo": [
         {
-          "name": "kick1",
+          "name": "kick3",
           "notes": []
         },
         {
-          "name": "snare1",
+          "name": "snare6",
           "notes": []
         },
         {
-          "name": "hh_open1",
+          "name": "hh_open2",
           "notes": []
         },
         {
-          "name": "hh_closed1",
+          "name": "hh_closed3",
           "notes": []
         }
       ],

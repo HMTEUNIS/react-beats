@@ -3,7 +3,6 @@ import { Context } from '../hooks/useStore'
 import { soundFiles } from '../constants/config'
 import Track from './Track'
 import { context } from 'tone'
-
 const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const { sequence: { trackList, noteCount } } = useContext(Context)
 
@@ -17,17 +16,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     const handleSoundSelection = (e) => {
         setSoundFileSelection({ ...soundFileSelection, [e.target.id]: e.target.value })
     }
-
-    // let toSave = trackList.map(track => {
-
-    //     const soundSave = {
-    //         name: track.soundFile,
-    //         notes: track.onNotes
-    //     }
-    //     return soundSave
-    // })
-    console.log(selected)
-    console.log('re', re)
 
     function saveIt(e) {
         let toSave = trackList.map(track => {
@@ -60,9 +48,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
 
             ]
         }
-
-
-        console.log(newBeat)
 
         fetch(`http://localhost:4000/beats/${selected + 1}`, {
             method: 'PATCH',
@@ -112,9 +97,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             ]
         }
 
-
-        console.log(newBeat)
-
         fetch(`http://localhost:4000/beats/${selected + 1}`, {
             method: 'PATCH',
             headers: {
@@ -138,13 +120,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
     let loadSnares = gettin.trackListInfo[1].notes
     let loadHho = gettin.trackListInfo[2].notes
     let loadHhc = gettin.trackListInfo[3].notes
-
-    // const savedTrackSounds = {
-    //     kickTrack : gettin.trackListInfo[0].name,
-    //     snareTrack : gettin.trackListInfo[1].name,
-    //     ohhTrack : gettin.trackListInfo[2].name,
-    //     chhTrack : gettin.trackListInfo[3].name
-    // }
 
     function loadin(e) {
         trackList[0].onNotes = []
@@ -176,11 +151,10 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             // 'cymbal': trackList[4].name
         })
     }
-    console.log(trackList)
+
     const tempTrackList = trackList.map((track) => {
         const title = track.title
         track.soundFile = soundFileSelection[title]
-        console.log(track)
         return track
     })
 
@@ -190,9 +164,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
         let soundFilePath = soundFiles[soundFile]
         return (
             <>
-
                 <Track
-
                     id={id}
                     key={title}
                     trackID={+trackID}
