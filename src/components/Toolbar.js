@@ -1,6 +1,4 @@
-import React, { useContext, memo, useEffect } from 'react'
-import { context } from 'tone'
-import { sequenceList } from '../constants/config'
+import React, { useContext, memo } from 'react'
 import { Context } from '../hooks/useStore'
 import './Toolbar.css'
 

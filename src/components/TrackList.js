@@ -19,7 +19,6 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
 
     function saveIt(e) {
         let toSave = trackList.map(track => {
-
             const soundSave = {
                 name: track.soundFile,
                 notes: track.onNotes
@@ -49,7 +48,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             ]
         }
 
-        fetch(`http://localhost:4000/beats/${selected + 1}`, {
+        fetch(`https://beatsback.herokuapp.com/beats/${selected + 1}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
@@ -97,7 +96,7 @@ const TrackList = ({ currentStepID, selected, fetched, re, setre }) => {
             ]
         }
 
-        fetch(`http://localhost:4000/beats/${selected + 1}`, {
+        fetch(`https://beatsback.herokuapp.com/beats/${selected + 1}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

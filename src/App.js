@@ -93,7 +93,7 @@ const [fetched, setFetched] = useState ([{
 //triggers a reload
 const [re, setre] = useState (false)
     useEffect(() => {
-    fetch ('http://localhost:5000/beats')
+    fetch ('https://beatsback.herokuapp.com/beats')
   
     .then(response => response.json())
     .then(data => setFetched(data));
